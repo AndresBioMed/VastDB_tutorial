@@ -53,4 +53,5 @@ RUN set -x; rm -rf /var/lib/apt/lists/*
 # Shared mounting
 VOLUME /share
 
-
+# Set Bash as the entry point to override R's default entry point
+ENTRYPOINT ["/bin/bash"]
